@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-    
-    <script src="p5.play.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js"></script>
 
-    <!--Add your Firsebase Config here below. -->
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-    
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyBzW4Eu2WqhvBDPE9WAx9XdiVjU_i4HN7s",
-        authDomain: "air-balloon-ride-63545.firebaseapp.com",
-        projectId: "air-balloon-ride-63545",
-        storageBucket: "air-balloon-ride-63545.appspot.com",
-        messagingSenderId: "598286939559",
-        appId: "1:598286939559:web:9b01d9a1ba09851786f282"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-    </script>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <script src="p5.play.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+  <!--Add your Firsebase Config here below. -->
+  <script type="module">
+   
+ 
+    var firebaseConfig = {
+      apiKey: "AIzaSyBzW4Eu2WqhvBDPE9WAx9XdiVjU_i4HN7s",
+      authDomain: "air-balloon-ride-63545.firebaseapp.com",
+      databaseURL: "https://air-balloon-ride-63545-default-rtdb.firebaseio.com",
+      projectId: "air-balloon-ride-63545",
+      storageBucket: "air-balloon-ride-63545.appspot.com",
+      messagingSenderId: "598286939559",
+      appId: "1:598286939559:web:9b01d9a1ba09851786f282"
+    };
 
 
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <meta charset="utf-8">
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
 
-  </head>
-  <body>
-      <script src="sketch.js"></script>
-    </body>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+</body>
+
 </html>
